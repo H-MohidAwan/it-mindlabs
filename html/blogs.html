@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Mindlabs | blog</title>
+     <!-- Include the Google Sign-In API script -->
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+     <!-- Add the meta tag to specify the Google Sign-In client ID -->
+     <meta
+       name="google-signin-client_id"
+       content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/IT_Mindlabs-imgs" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/IT_Mindlabs-imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/IT_Mindlabs-imgs/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/IT_Mindlabs-imgs/site.webmanifest" />
+    <link rel="stylesheet" href="/css/IT_Mindlabs.css" />
+  </head>
+  <body>
+    <nav class="sec-1-navbar">
+      <a href="./index.html" class="sec-1-navbar-logo"> </a>
+      <ul class="sec-1-navbar-ul">
+        <li class="sec-1-navbar-ul-li">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="sec-1-navbar-ul-li">
+          <a href="./services.html">Services</a>
+        </li>
+        <li class="sec-1-navbar-ul-li">
+          <a href="./blogs.html">Blog </a>
+        </li>
+        <li class="sec-1-navbar-ul-li"><a href="#aboutus">About Us</a></li>
+        <li class="sec-1-navbar-ul-li"><a href="./contact_us.html">Contact Us</a></li>
+      </ul>
+      <div class="" id="loginLi">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      </div>
+      <div class="" id="logoutLi" style="display: none">
+        <img
+          id="profilePic"
+          style="width: 30px; height: 30px; border-radius: 50%"
+        />
+        <button class="primary_btn" onclick="signOut()">Logout</button>
+      </div>
+    </nav>
+
+    <section id="sec-7-blog">
+      <header class="sec-7-blg-header">
+        <h5 class="sec-4-header-h5">LATEST ARTICLE</h5>
+        <h1 class="sec-4-header-h1">
+          See Our<br />
+          Latest Blog Posts
+        </h1>
+        <div class="line-animate line-animate-sec-4-clients">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <!-- <button class="sec-4-header-btn">See All Blogs</button> -->
+      </header>
+      <!-- <div class="sec-7-blog-slider-main">
+        <div class="sec-7-blog-slider-divs">
+          <div class="sec-7-blog-slider-innr">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="./IT_Mindlabs-imgs/blog1-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="./IT_Mindlabs-imgs/blog01-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="./IT_Mindlabs-imgs/blog-2-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="./IT_Mindlabs-imgs/blog06-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+        </div>
+        <button id="prevBtn" onclick="changeSlide(-1)"><</button>
+        <button id="nextBtn" onclick="changeSlide(1)">></button>
+      </div> -->
+      <!-- <div class="sec-7-slider-ftr">
+        <div class="sec-5-sldr-ftr-1"><a href="#sec-5-slider-divs1"></a></div>
+        <div class="sec-5-sldr-ftr-1"><a href="#sec-5-slider-divs4"></a></div>
+        <div class="sec-5-sldr-ftr-1"><a href="#sec-5-slider-divs4"></a></div>
+        <div class="sec-5-sldr-ftr-1"><a href="#sec-5-slider-divs4"></a></div>
+      </div> -->
+
+      <div class="sec-7-blog-slider-main_2">
+        <div class="sec-7-blog-slider-divs_2">
+          <div class="sec-7-blog-slider-innr_2">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="/IT_Mindlabs-imgs/blog1-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr_2">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="/IT_Mindlabs-imgs/blog01-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr_2">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="/IT_Mindlabs-imgs/blog-2-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+
+          <div class="sec-7-blog-slider-innr_2">
+            <img
+              class="sec-7-blog-slidr-img"
+              src="/IT_Mindlabs-imgs/blog06-390x290.jpg"
+              alt="testi-1"
+            />
+            <div class="sec-7-blog-sldr-time">
+              Techno &nbsp; | &nbsp; October 22,2020
+            </div>
+            <h2 class="sec-7-sldr-h2">
+              How can use our latest <br />
+              news by techno
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="sec-9-footer">
+      <div class="ftr-main">
+        <div class="sec-9-lft1">
+          <div class="sec-9-lft1-logo"></div>
+          <p class="sec-9-lft1-p">
+            Completely strategize client-cent <br />
+            Phosfluorescently iterate efficient <br />
+            internal or organic.
+          </p>
+          <h2 class="sec-9-lft1-h2">Follow Us</h2>
+          <img
+            src="/IT_Mindlabs-imgs/Screenshot (23).png"
+            alt="icons"
+            class="sec-9-lft1-icons"
+          />
+        </div>
+        <div class="sec-9-lft2">
+          <h2 class="sec-9-lft2-h2">Quick Links</h2>
+          <ul class="sec-9-lft2-ul">
+            <li><a href="./index.html">→ Home</a></li>
+            <li><a href="./services.html">→ Services</a></li>
+            <li><a href="./blogs.html">→ Blog</a></li>
+            <li><a href="./contact_us.html">→ Contact Us</a></li>
+            <!-- <li>→ Our Team</li> -->
+          </ul>
+        </div>
+
+        <div class="sec-9-lft4">
+          <h2 class="sec-9-lft2-h2">Contact Info</h2>
+          <div class="location_icn_hdr_p_cntnr">
+            <div class="locatin_icn">
+              <img src="../IT_Mindlabs-imgs/email.png" alt="icon" width="100%" />
+            </div>
+            <div class="location_hdr_p_cntnr">
+              <h3>Email</h3>
+              <p>Inquiries@itmindlabs.net</p>
+            </div>
+          </div>
+          <div class="location_icn_hdr_p_cntnr">
+            <div class="locatin_icn">
+              <img src="../IT_Mindlabs-imgs/call.png" alt="icon" width="100%" />
+            </div>
+            <div class="location_hdr_p_cntnr">
+              <h3>Phone</h3>
+              <p>+153-324-3243</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-9-ftr-btm">
+        <h4 class="sec-9-ftr-btm-h4">
+          © 2023 IT_Mindlabs.All Rights Reserved.
+        </h4>
+        <div class="ftr_h4_cnntr">
+          <h4 class="sec-9-ftr-btm-h4">Privacy Policy</h4>
+          <h4 class="sec-9-ftr-btm-h4">Terms & Conditions</h4>
+          <h4 class="sec-9-ftr-btm-h4">Contact Us</h4>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/IT_Mindlabs.js"></script>
+  </body>
+</html>
