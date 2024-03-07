@@ -46,7 +46,7 @@ body {
   height: calc(20px + 5vw);
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -475,7 +475,7 @@ a {
   /* border: 3px solid goldenrod; */
 }
 .sec-2-rght-txt {
-  height: 520px;
+  height: max-content;
   width: 650px;
   /* border: 4px solid fuchsia; */
 }
@@ -1950,4 +1950,19 @@ fieldset button {
 }
 .bg_img_21 {
   background-image: url(/IT_Mindlabs-imgs/evaluation1.jpg);
+}
+
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 800px) {
+  .sec-2-lft-img {
+    display: none;
+  }
+
+  .img_cntnr_contact {
+    display: none;
+  }
+
+  .contact_us_sec form {
+    width: 90%;
+  }
 }
