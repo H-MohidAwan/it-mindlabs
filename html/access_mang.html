@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Mindlabs | Advisory</title>
+    <!-- Include the Google Sign-In API script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Add the meta tag to specify the Google Sign-In client ID -->
+    <meta
+      name="google-signin-client_id"
+      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/IT_Mindlabs-imgs" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/IT_Mindlabs-imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/IT_Mindlabs-imgs/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/css/IT_Mindlabs.css" />
+  </head>
+  <body>
+    <nav class="sec-1-navbar">
+      <a href="/index.html" class="sec-1-navbar-logo"> </a>
+      <ul class="sec-1-navbar-ul">
+        <li class="sec-1-navbar-ul-li">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="sec-1-navbar-ul-li">
+          <a href="/html/advisory.html">Services</a>
+          <div class="services_dropdown">
+            <ul>
+              <li><a href="/html/advisory.html">Advisory</a></li>
+              <li>
+                <a href="/html/identity_gov_adm.html"
+                  >Identity Governance & Administration</a
+                >
+              </li>
+              <li>
+                <a href="/html/privileged_acc_mang.html"
+                  >Privileged Access Management</a
+                >
+              </li>
+              <li>
+                <a href="/html/customer_idnt_acc_mang.html"
+                  >Customer Identity Access Management</a
+                >
+              </li>
+              <li><a href="/html/access_mang.html">Access Management</a></li>
+              <li>
+                <a href="/html/iam_mang_serv.html">IAM Managed Services</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="sec-1-navbar-ul-li">
+          <a href="/html/partners.html">Partners</a>
+        </li>
+        <li class="sec-1-navbar-ul-li">
+          <a href="/html/contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="g-signin2"></div>
+    </nav>
+
+    <section class="sec-3-srvcs">
+      <div class="sec-3-srvcs-bg">
+        <!-- <h5 class="sec-3-h5" style="padding-top: 4rem">OUR SERVICES</h5> -->
+        <h1 class="sec-3-srvcs-h1">Access Management Services</h1>
+        <div class="line-animate">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <strong class="sec-1-landing-view-p advisory_strong"
+          >Keep your business secure with a centralized solution for
+          authentication and <br />
+          authorization to applications, including Single Sign-On, Multi-factor
+          <br />Authentication, and passwordless solutions.</strong
+        >
+        <button class="primary_btn advisory_btn">Learn More</button>
+        <!-- <div class="sec-3-divs-float">
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img"></div>
+            <h1 class="sec-3-div1-h1">Product Engineering</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img sec-2-div1-img2"></div>
+            <h1 class="sec-3-div1-h1">Digital Services</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img sec-2-div1-img3"></div>
+            <h1 class="sec-3-div1-h1">IT Consultancy</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img"></div>
+            <h1 class="sec-3-div1-h1">Product Engineering</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img sec-2-div1-img2"></div>
+            <h1 class="sec-3-div1-h1">Digital Services</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+          <div class="sec-3-div1">
+            <div class="sec-3-div1-img sec-2-div1-img3"></div>
+            <h1 class="sec-3-div1-h1">IT Consultancy</h1>
+            <p class="sec-3-div1-p">
+              We have the expertise to help you
+              <br />define a game plan, design the <br />products customers
+              want.
+            </p>
+            <a class="sec-3-div1-a" href="#">READ MORE →</a>
+          </div>
+        </div> -->
+        <!-- <div class="sec-ftr-count">
+            <div class="sec-3-ftr-count-div1">
+              <h1 class="count-div1-h1">15K</h1>
+              <h4 class="count-div1-h4">Happy Clients</h4>
+            </div>
+            <div class="sec-3-ftr-count-div1">
+              <h1 class="count-div1-h1">1280+</h1>
+              <h4 class="count-div1-h4">Account Number</h4>
+            </div>
+            <div class="sec-3-ftr-count-div1">
+              <h1 class="count-div1-h1">10K</h1>
+              <h4 class="count-div1-h4">Finished Projects</h4>
+            </div>
+            <div class="sec-3-ftr-count-div1 sec-3-ftr-count-div1-4">
+              <h1 class="count-div1-h1">992+</h1>
+              <h4 class="count-div1-h4">Win Awards</h4>
+            </div>
+          </div> -->
+      </div>
+    </section>
+
+    <section class="sec-6-exprnc increase_sec_height">
+      <div class="sec-6-lft-img bg_img_8"></div>
+      <div class="sec-6-rght-txt">
+        <h1 class="sec-6-srvcs-h1">
+          Our Access Management Services Can Help You Gain Control Again
+        </h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+        <p class="sec-6-rght-p">
+          You may think you had solved the authentication and authorization
+          problem with your legacy Web Access Management tool and Active
+          Directory. However, traditional IT patterns have been breaking as
+          cloud computing and BYOD have forced organizations to mature their
+          approach to authentication and authorization. Our Access Management
+          practice can help you regain centralized visibility and control of
+          your users, devices, networks, and applications and how they interact
+          with each other.
+        </p>
+        <br />
+        <p class="sec-6-rght-p">
+          There are dozens of vendor solutions, each tackling a different part
+          of the larger problem. Integral Partners can help you navigate the
+          critical decisions and choose the right Access Management solution,
+          including technical assessment/analysis, strategy planning,
+          roadmapping, implementation, and adoption.
+        </p>
+
+        <br />
+        <ul>
+          <li>Strategic assessment and advice</li>
+          <li>Evaluate your company’s needs and capabilities</li>
+          <li>Help with strategy and roadmap planning</li>
+          <li>Refresh and Modernize your IAM program</li>
+          <li>Help with Vendor evaluation</li>
+          <li>Reduce risk and comply with regulations</li>
+        </ul>
+        <br />
+        <br />
+
+        <button class="primary_btn advisory_btn">Discuss an Engagement</button>
+      </div>
+    </section>
+
+    <div class="platforms_sec">
+      <h1>Featured Platforms</h1>
+      <div class="logos_cntnr">
+        <div class="logo_imgs_cntnr">
+          <a href="https://www.sailpoint.com/"
+            ><img
+              src="/IT_Mindlabs-imgs/SailPoint-Managed-Services.png"
+              alt="SailPoint-Managed-Services"
+          /></a>
+        </div>
+        <div class="logo_imgs_cntnr">
+          <a href="https://saviynt.com/"
+            ><img
+              src="/IT_Mindlabs-imgs/Saviynt-Managed-Services.png"
+              alt="Saviynt-Managed-Services"
+          /></a>
+        </div>
+        <div class="logo_imgs_cntnr">
+          <a href="https://www.cyberark.com/"
+            ><img
+              src="/IT_Mindlabs-imgs/CyberArk-Managed-Services.png"
+              alt="CyberArk-Managed-Services"
+          /></a>
+        </div>
+
+        <div class="logo_imgs_cntnr">
+          <a href="https://www.okta.com/"
+            ><img
+              src="/IT_Mindlabs-imgs/Okta-Managed-Services.png"
+              alt="Okta-Managed-Services"
+          /></a>
+        </div>
+        <div class="logo_imgs_cntnr">
+          <a href="https://www.beyondtrust.com/"
+            ><img
+              src="/IT_Mindlabs-imgs/BeyondTrust-Managed-Services.png"
+              alt="BeyondTrust-Managed-Services"
+          /></a>
+        </div>
+        <div class="logo_imgs_cntnr">
+          <a href="https://www.pingidentity.com/en.html"
+            ><img
+              src="/IT_Mindlabs-imgs/Ping-Managed-Services.png"
+              alt="Ping-Managed-Services"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="sec-6-exprnc imglft_txtrght">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Okta vs Ping Evaluation</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >Evaluate your organization, workflow, and processes needs and
+            identify the right tools to help
+          </strong>
+          <br />
+          When choosing single sign-on (SSO) applications, identity providers
+          (IdP), and similar solutions, it’s critical to look carefully at which
+          tools work best for your specific user cases and environment. Our
+          experienced advisors look at what access management capabilities you
+          require and recommend the best-fit solutions. We help you navigate
+          your RFP and vendor selection process, map the right use cases to
+          vendor capabilities, and craft a deployment plan.
+        </p>
+        <ul>
+          <li>Identify relevant use cases and prioritize them</li>
+          <li>Analyze vendor capabilities to satisfy use cases</li>
+          <li>Define future architecture patterns</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">Discuss an Evaluation</button>
+      </div>
+      <div class="sec-6-lft-img bg_img_20"></div>
+    </section>
+
+    <section class="sec-6-exprnc">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Azure vs Okta Evaluation</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >Use our experience to help put vendor statements in context
+          </strong>
+          <br />
+          One of the most common questions we hear is whether licensing Okta is
+          worth the cost when Azure provides some of the Access Management
+          features desired. Is going with Okta the best way to avoid vendor
+          lock-in? Or perhaps the deep contextual access features that Microsoft
+          offers for its own products are a must have. We have helped clients
+          make this decision through use case analysis and a vendor neutral
+          weighing of features. We can help bridge the gap between the different
+          perspectives in your organization and provide our expert neutral
+          advice.
+        </p>
+        <ul>
+          <li>Review where Azure sits in your current organization</li>
+          <li>Analyze vendor capabilities to satisfy use cases</li>
+          <li>Determine if Okta and Azure should work together and how</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">Learn More</button>
+      </div>
+      <div class="sec-6-lft-img bg_img_21"></div>
+    </section>
+
+    <section class="sec-6-exprnc imglft_txtrght">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Access Management Advisory Services</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >Let us help you bootstrap your Access Management Program
+          </strong>
+          <br />
+          Do you need an AME but don’t know where to start? Or maybe you want to
+          update your tooling and need to know which use cases are relevant for
+          your Identity Governance tools and which for your Access Management
+          tools.
+        </p>
+        <p class="sec-6-rght-p">
+          We can help you build out a strategy and roadmap for your Access
+          Management program, highlighting gaps in the current state and
+          providing recommendations for meeting your organization’s security and
+          user experience goals.
+        </p>
+        <ul>
+          <li>Conduct interviews to discover and document current state</li>
+          <li>Provide input on best practices and organizational maturity</li>
+          <li>Deliver an actionable Access Management roadmap</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">Discuss an Evaluation</button>
+      </div>
+      <div class="sec-6-lft-img bg_img_19"></div>
+    </section>
+
+    <section class="sec-6-exprnc">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Expert Services</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >We embed ourselves in your team to share our expertise without
+            getting in the way
+          </strong>
+          <br />
+          Sometimes you have the right people in house to implement an Access
+          Management solution but are not sure of the best approach. We can help
+          you design it correctly from the start, through collaborative
+          whiteboard sessions and use case analysis. We can also provide your
+          team with artifacts to get them going, such as reference applications
+          and code samples using vendor libraries. This way, your team can get
+          started quickly and avoid spinning their wheels.
+        </p>
+
+        <ul>
+          <li>Conduct interviews to discover and document current state</li>
+          <li>Provide input on best practices and organizational maturity</li>
+          <li>Deliver an actionable Access Management roadmap</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">
+          Discuss Experts Services
+        </button>
+      </div>
+      <div class="sec-6-lft-img bg_img_18"></div>
+    </section>
+
+    <section class="sec-6-exprnc imglft_txtrght">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Okta or Ping Identity Deployment</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >We evaluate your organization, workflow, processes, and tools to
+            help you develop a successful AME strategy and roadmap
+          </strong>
+          <br />
+          Implementing an access management solution can be complex if you don’t
+          understand the tool and the ecosystem around it. We can handle all
+          phases of a deployment, from building out architecture to phased
+          onboarding to aggregating users. We’re experienced at deploying
+          iterative, phased authentication and authorization solutions,
+          including WAM, SSO, MFA and IDaaS. And our experts know how to
+          integrate your solutions with other systems such as IGA, PAM, API
+          gateways, SIEM, and DLP. Want to also manage your user lifecycle in
+          these tools? We can help there as well.
+        </p>
+
+        <ul>
+          <li>Gather use cases</li>
+          <li>Provide input on best practices and organizational maturity</li>
+          <li>Deliver an actionable Access Management roadmap</li>
+          <li>Extend multi-factor authentication (MFA)</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">Discuss an Evaluation</button>
+      </div>
+      <div class="sec-6-lft-img bg_img_2"></div>
+    </section>
+
+    <section class="sec-6-exprnc">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">Customer Identity and Access Management</h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >Customer identity means new stakeholders, new use cases, and new
+            challenges
+          </strong>
+          <br />
+          Many organizations are embarking on digital transformation projects to
+          increase brand awareness, loyalty, and marketing opportunities.
+          However, this also puts organizations in a position they may have
+          never been in before: publishing applications to customers and
+          securing customer authentication data.
+        </p>
+        <p class="sec-6-rght-p">
+          We understand the challenges inherent in these projects, and the need
+          to bridge gaps between information security, marketing, and business
+          owners. We can help during planning, architecture, and implementation
+          to ensure a successful project and happy customers.
+        </p>
+
+        <ul>
+          <li>Conduct interviews to discover and document current state</li>
+          <li>Provide input on best practices and organizational maturity</li>
+          <li>Deliver an actionable Access Management roadmap</li>
+          <li>Provide input on best practices and organizational maturity</li>
+          <li>
+            Plan for implementation by identifying the right parties ahead of
+            time
+          </li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">
+          Discuss Experts Services
+        </button>
+      </div>
+      <div class="sec-6-lft-img bg_img_3"></div>
+    </section>
+
+    <section class="sec-6-exprnc imglft_txtrght">
+      <div class="sec-6-rght-txt">
+        <h3 class="sub_hdngs">ACCESS MANAGEMENT</h3>
+        <h1 class="sec-6-srvcs-h1">
+          Legacy Access Management Replacement using Okta Access Gateway
+        </h1>
+        <div class="line-animate-sec-6">
+          <div class="line-crcl-animate"></div>
+        </div>
+        <br />
+        <br />
+
+        <p class="sec-6-rght-p">
+          <strong class="sec-6-h5"
+            >Let us help move your Access Management workloads to the cloud
+          </strong>
+          <br />
+          Heavyweight first generation Web Access Management solutions like
+          SiteMinder and Oracle Access Manager are being deprecated by their
+          vendors, leaving many on premise applications without supported
+          authentication. Meanwhile, your workforce may now need to access these
+          same applications from the cloud. We can help by providing planning,
+          architecture, and implementation support for tools like Okta’s Access
+          Gateway product to provide cloud authentication and access to your
+          legacy applications.
+        </p>
+
+        <ul>
+          <li>Analyze the impact by migrating your existing legacy tooling</li>
+          <li>
+            Assist application teams preparing to deal with impending changes
+          </li>
+          <li>
+            Evaluate the relevance of new use cases enabled by migrating from
+            the legacy platform
+          </li>
+          <li>Implement the tool from start to finish</li>
+        </ul>
+        <br />
+        <button class="primary_btn advisory_btn">Discuss an Evaluation</button>
+      </div>
+      <div class="sec-6-lft-img bg_img_16"></div>
+    </section>
+
+    <footer id="sec-9-footer">
+      <div class="ftr-main">
+        <div class="sec-9-lft1">
+          <div class="sec-9-lft1-logo"></div>
+          <p class="sec-9-lft1-p">
+            Empowering businesses with <br />
+            innovative IT solutions for <br />
+            growth and success.
+          </p>
+          <!-- <h2 class="sec-9-lft1-h2">Follow Us</h2> -->
+          <div class="social_media_cntnr_icns">
+            <!-- <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i> -->
+          </div>
+        </div>
+
+        <div class="sec-9-lft2">
+          <h2 class="sec-9-lft2-h2">Quick Links</h2>
+          <ul class="sec-9-lft2-ul">
+            <li><a href="/html/index.html">→ Home</a></li>
+            <li><a href="/html/services.html">→ Services</a></li>
+            <li><a href="/html/partners.html">→ Partners</a></li>
+            <li><a href="/html/contact_us.html">→ Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="sec-9-lft4">
+          <h2 class="sec-9-lft2-h2">Contact Info</h2>
+          <div class="location_icn_hdr_p_cntnr">
+            <div class="locatin_icn">
+              <img src="/IT_Mindlabs-imgs/email.png" alt="icon" width="100%" />
+            </div>
+            <div class="location_hdr_p_cntnr">
+              <h3>Email</h3>
+              <p>support@itmindlabs.net</p>
+            </div>
+          </div>
+          <div class="location_icn_hdr_p_cntnr">
+            <div class="locatin_icn">
+              <!-- <img src="/IT_Mindlabs-imgs/call.png" alt="icon" width="100%" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-9-ftr-btm">
+        <h4 class="sec-9-ftr-btm-h4">
+          © 2023 IT_Mindlabs.All Rights Reserved.
+        </h4>
+        <div class="ftr_h4_cnntr">
+          <h4 class="sec-9-ftr-btm-h4">Privacy Policy</h4>
+          <h4 class="sec-9-ftr-btm-h4">Terms & Conditions</h4>
+          <h4 class="sec-9-ftr-btm-h4">Contact Us</h4>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/IT_Mindlabs.js"></script>
+  </body>
+</html>

@@ -6,30 +6,63 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("fixed-navbar");
   }
 });
-function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  var loginLi = document.getElementById("loginLi");
-  var logoutLi = document.getElementById("logoutLi");
-  var profilePic = document.getElementById("profilePic");
 
-  // Hide login button, show logout button, and display user profile pic
-  loginLi.style.display = "none";
-  logoutLi.style.display = "block";
-  profilePic.src = profile.getImageUrl();
-  profilePic.alt = "Profile Picture";
-}
+gapi.load("auth2", function () {
+  gapi.auth2.init();
+});
 
-function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {
-    var loginLi = document.getElementById("loginLi");
-    var logoutLi = document.getElementById("logoutLi");
+// function onSignIn(googleUser) {
+//   var profile = googleUser.getBasicProfile();
+//   var loginLi = document.getElementById("loginLi");
+//   var logoutLi = document.getElementById("logoutLi");
+//   var profilePic = document.getElementById("profilePic");
 
-    // Hide logout button, show login button
-    logoutLi.style.display = "none";
-    loginLi.style.display = "block";
-  });
-}
+//   // Hide login button, show logout button, and display user profile pic
+//   loginLi.style.display = "none";
+//   logoutLi.style.display = "block";
+//   profilePic.src = profile.getImageUrl();
+//   profilePic.alt = "Profile Picture";
+// }
+
+// function signOut() {
+//   var auth2 = gapi.auth2.getAuthInstance();
+//   auth2.signOut().then(function () {
+//     var loginLi = document.getElementById("loginLi");
+//     var logoutLi = document.getElementById("logoutLi");
+
+//     // Hide logout button, show login button
+//     logoutLi.style.display = "none";
+//     loginLi.style.display = "block";
+//   });
+// }
+
+// function handleSignInClick() {
+//   gapi.auth2.getAuthInstance().signIn({
+//     prompt: 'select_account'
+//   });
+// }
+
+// function handleSignOutClick() {
+//   gapi.auth2.getAuthInstance().signOut();
+// }
+
+// function sendEmail() {
+//   let email = document.getElementById("email").value;
+//   let phone = document.getElementById("phone").value;
+//   let message = document.getElementById("msg").value;
+
+//   let msgBody = `Email: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "h.mohidawan984@gmail.com",
+//     Password: "8EFC532475090154ED713BE3FE3815FE515B",
+//     To: "h.mohidawan984@gmail.com",
+//     From: "h.mohidawan984@gmail.com",
+//     Subject: "This is the subject",
+//     Body: msgBody,
+//   }).then((message) => alert(message));
+// }
 
 // // Function to toggle display of the login form
 // function toggleLoginForm() {
